@@ -14,7 +14,7 @@
 % outputArg1 = inputArg1;
 % outputArg2 = inputArg2;
 % end
-function[Power]=frame(frameLength,hopSize,x)
+function[Power,NFFT]=frame(frameLength,hopSize,x)
 
 numFrames = floor((length(x)-frameLength)/hopSize)+1;
 % adding a window
